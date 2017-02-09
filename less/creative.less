@@ -165,7 +165,6 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/next.jpg');
     text-align: center;
     color: black;
     .header-content {
@@ -185,7 +184,7 @@ header {
                 margin: 30px auto;
             }
             p {
-                font-weight: 300;
+                font-weight: 600;
                 color: fade(black, 70%);
                 font-size: 16px;
                 margin-bottom: 50px;
@@ -216,6 +215,23 @@ header {
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 781px) {
+    header {
+        background-image: url('../img/header.jpg');
+    }
+}
+@media screen and (min-width: 541px) and (max-width:780px) {
+    header {
+        background-image: url('../img/header780.jpg');
+    }
+}
+
+@media screen and (max-width: 540px) {
+    header {
+        background-image: url('../img/header540.jpg');
     }
 }
 
